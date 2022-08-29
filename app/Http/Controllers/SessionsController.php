@@ -20,8 +20,7 @@ class SessionsController extends Controller
 
         if (!auth()->attempt($attributes)) {
             throw ValidationException::withMessages([
-                'email' => 'Email does not exist',
-                'password' => 'Password is incorrect'
+                'password' => 'Password or Email is incorrect'
             ]);
         }
         session()->regenerate();
@@ -34,6 +33,6 @@ class SessionsController extends Controller
     {
         auth()->logout();
 
-        return back()->with('success', 'Goodbye!');
+        return redirect('/')->with('success', 'Goodbye!');
     }
 }

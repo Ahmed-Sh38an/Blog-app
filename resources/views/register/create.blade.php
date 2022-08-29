@@ -14,6 +14,7 @@
                 <x-form.submit-button>
                     Register
                 </x-form.submit-button>
+                
             </form>
         </x-panel>
     </main>

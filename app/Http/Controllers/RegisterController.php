@@ -22,7 +22,7 @@ class RegisterController extends Controller
             'email' => ['required', 'max:255', 'email', Rule::unique('users', 'email')],
             'password' => ['required', 'max:255', 'min:7'],
         ]);
-
+        
         $user = User::create($attributes);
 
         Auth()->login($user);

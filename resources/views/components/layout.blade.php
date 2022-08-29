@@ -25,7 +25,11 @@
 
                 <x-dropdown>
                     <x-slot name="trigger">
-                        <button class="text-xs font-bold uppercase">Welcome, {{auth()->user()->name }}!</button>
+                        <button class="w-full flex">
+                            <p class="text-xs font-bold uppercase px-6"> Welcome, {{auth()->user()->name }}! </p>
+                            <x-icon name="down-arrow" style="right: 1px; top:-2px;" />
+                        </button>
+                        
                     </x-slot>
                     @can('admin')
                         <x-dropdown-item href="/admin/posts" :active="request()->is('admin/posts')">Dashboard</x-dropdown-item>
