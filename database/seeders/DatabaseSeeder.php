@@ -30,6 +30,7 @@ class DatabaseSeeder extends Seeder
 
         Post::factory(5)->create([
             'user_id' => $user->id,
+            'thumbnail' => 'thumbnails/2RNtGHlfuDz11YOVHVimZRnHhzrXKVJqtinDVMjO.png'
         ]);
 
         // $user = User::factory()->create();
