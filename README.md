@@ -1,6 +1,6 @@
 <h1> My First Laravel Project </h1>
 <br>
-<h2> Following the awesome <a href="https://laracasts.com/series/laravel-8-from-scratch/">Laravel course at Laracasts By Jeffrey Way </a> </h2>
+<h2> Following the <a href="https://laracasts.com/series/laravel-8-from-scratch/">Laravel course at Laracasts By Jeffrey Way </a> </h2>
 <br>
 Containing an Index, a Register and Login, Posts page, Comments, all posts by User, Categories and Admin Dashboard.
 <br>
