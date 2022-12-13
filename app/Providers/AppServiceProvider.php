@@ -29,7 +29,7 @@ class AppServiceProvider extends ServiceProvider
         Model::unguard() ;
         
         FacadesGate::define('admin', function(User $user) {
-            return $user->username == 'Admin' ;
+            return $user->username == 'Admin' || 'admin' ;
         });
     }
 }
